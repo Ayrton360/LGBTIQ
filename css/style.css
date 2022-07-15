@@ -1,0 +1,281 @@
+*{
+    font-family: 'Syne', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar{
+    background: #fff;
+    position: relative;
+    z-index: 10;
+}
+
+.navbar .nav-item{
+    color: #111;
+    transition: .5s;
+    position: absolute;
+    top: 10px;
+    right: 80px;
+}
+.navbar .nav-item2{
+    color: #111;
+    transition: .5s;
+    position: absolute;
+    top: 10px;
+    right: 170px;
+}
+.navbar .nav-item3{
+    color: #111;
+    transition: .5s;
+    position: absolute;
+    top: 10px;
+    right: 230px;
+}
+
+.container-fluid p{
+    font-size: 10px;
+}
+
+.fondo{
+    background: linear-gradient(140deg, rgba(231,0,0,1) 0%,
+     rgba(255,140,0,1) 20%,
+      rgba(255,239,0,1) 40%,
+       rgba(0,129,31,1) 60%,
+        rgba(48,100,169,1) 80%,
+         rgba(135,24,157,1) 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    padding-bottom: 25px;
+}
+
+.fondo h1{
+    font-size: 80px;
+    padding: 20px 0 10px;
+    transition: all 1s cubic-bezier(.42, 0, 1, 1);
+}
+
+.fondo .menu::before{
+    content: 'Mas Paginas';
+    background: rgba(238, 238, 238, 0);
+    border: 3px solid #fff;
+    color: #fff;
+    padding: 2px 5px;
+    font-size: 25px;
+    transition: 1s;
+    cursor: pointer;
+}
+
+.fondo .menu.active::before{
+    content: 'Volver';
+}
+
+.fondo h2:hover{
+    letter-spacing: 2px;
+}
+
+.fondo .pags{
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.fondo .pags li{
+    list-style: none;
+    text-align: center;
+    margin: 15px 0;
+    padding: 10px;
+    opacity: 0;
+    visibility: hidden;
+    transition: .5s;
+    transform: translateY(-200px);
+    transition-delay: calc(.1s * var(--i));
+}
+
+.fondo.active .pags li {
+    opacity: 1;
+    visibility: visible;
+    transform: translateX(0px);
+}
+
+.fondo .pags li a{
+    background: rgba(238, 238, 238, 0);
+    border: 3px solid #111;
+    color: #111;
+    font-size: 15px;
+    letter-spacing: 1px;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 4px 10px;
+    display: inline-block;
+}
+
+.fondo .pags li a:hover{
+    background: #111;
+    color: #fff;
+    padding: 5px 20px;
+    text-transform: lowercase;
+}
+
+.info{
+    height: 376px;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.info_1{
+    width: 500px;
+    height: 250px;
+    border-radius: 20px;
+    background: #eee;
+    padding: 20px;
+    font-size: 20px;
+    text-align: center;
+    transition: 1s;
+    cursor: pointer;
+    background-size: cover;
+}
+
+.info_1 p{
+    visibility: hidden;
+    opacity: 0;
+    transition: 1s;
+    font-weight: 900;
+    color: #111;
+}
+
+
+.info_1:hover{
+    width: 550px;
+    height: 300px;
+    padding:50px;
+}
+
+.info_1:hover>p{
+    visibility: visible;
+    opacity: 1;
+}
+
+.info_2{
+    width: 500px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.info_2 button{
+    margin: 10px;
+    padding: 5px 7px;
+    color: #111;
+    border: 3px solid #111;
+    text-transform: uppercase;
+    cursor: pointer;
+    border-radius: 0;
+    background: rgba(255, 255, 255, 0);
+}
+
+
+.info_2 button:hover{
+    letter-spacing: 2px;
+}
+
+.info_3{
+    width: 500px;
+    height: 250px;
+    border-radius: 20px;
+    background: #eee;
+    transition: .5s;
+}
+
+.info_3:hover{
+    width: 550px;
+    height: 300px;
+}
+
+.info_3 img{
+    object-fit: cover;
+    width: 500px;
+    height: 250px;
+    border-radius: 20px;
+    transition: .5s;
+}
+
+.info_3 img:hover{
+    width: 550px;
+    height: 300px;
+}
+
+
+/*norton*/
+
+.contenido{
+    text-align: center;
+    padding: 25px 200px 0;
+}
+
+.cuadro{
+    background: #ddd;
+    padding: 10px 20px;
+    border-radius: 20px;
+}
+.contador{
+    text-align: center;
+    padding: 25px 200px 0px;
+}
+.content{
+    text-align: center;
+    padding: 10px 20px;
+}
+.reloj{
+    background: linear-gradient(140deg, rgba(231,0,0,1) 0%,
+     rgba(255,140,0,1) 20%,
+      rgba(255,239,0,1) 40%,
+       rgba(0,129,31,1) 60%,
+        rgba(48,100,169,1) 80%,
+         rgba(135,24,157,1) 100%);
+    padding: 10px 20px;
+    border-radius: 20px;
+    margin: 20px;
+}
+.content-quiz{
+    max-width: 700px;
+    margin: auto;
+    padding: 20px;
+}
+.container{
+    border: 2px solid #5624d0;
+    border-radius: 7px;
+    padding: 10px;
+    margin: 10px 0px;
+}
+label{
+    display: block;
+    padding: 7px;
+    border-radius: 7px;
+    cursor: pointer;
+    border: 1px dashed #ccc;
+    margin-bottom: 3px;
+}
+label:hover{
+    background: #cec0fc;
+}
+
+.boton{
+    width: 40%;
+    display: block;
+    margin: auto;
+    padding: 10px;
+    background-color: #76d7c8;
+    border: none;
+    cursor: pointer;
+    border-radius: 20px;
+}
